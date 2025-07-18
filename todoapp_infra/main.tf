@@ -23,6 +23,12 @@ module "resource_group1" {
   resource_group_location = "centralindia"
 }
 
+module "resource_group3" {
+  source                  = "../modules/azurerm_resource_group"
+  resource_group_name     = "rg-todoapp3"
+  resource_group_location = "centralindia"
+}
+
 module "resource_group2" {
   source                  = "../modules/azurerm_resource_group"
   resource_group_name     = "rg-todoapp2"
